@@ -28,7 +28,7 @@ namespace MultiFoods_Backend.Controllers
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)]
             })
             .ToArray();
-            int x = 0;
+            
         }
     }
 }
