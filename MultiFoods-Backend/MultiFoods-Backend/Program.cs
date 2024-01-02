@@ -1,5 +1,3 @@
-using MultiFoods_Backend.Services;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,10 +15,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
-
-builder.Services.AddScoped<IDbService, DbService>();
-builder.Services.AddScoped<IProductsService, ProductsService>();
 
 app.UseHttpsRedirection();
 
