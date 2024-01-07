@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using MultiFoods_Backend.Controllers;
 
 namespace MFB_UnitTests
@@ -6,9 +7,13 @@ namespace MFB_UnitTests
     {
         Products _controller;
 
+
+
         [Fact]
         public void AllTests()
         {
+            var result = _controller.GetProducts();
+            Assert.IsType<OkObjectResult>(result.Result);
             Assert.Equal(5, 5);
         }
     }
