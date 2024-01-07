@@ -80,65 +80,64 @@ namespace MultiFoods_Backend.Controllers
 
         //POST+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         [HttpPost]
-        public async Task<ActionResult> CreateProduct([FromBody] string productName)
+        public async Task<IActionResult> CreateProduct([FromBody] ProductsDTO product)
         {
             try
             {
                 await using var connection = new NpgsqlConnection(connectionString);
                 await connection.OpenAsync();
 
-                var sql = "INSERT INTO products (product_name) VALUES (@productName)";
+                var sql = "INSERT INTO products (product_name, product_price) VALUES (@productName, @productPrice)";
                 await using var cmd = new NpgsqlCommand(sql, connection);
-                cmd.Parameters.AddWithValue("productName", productName);
+                cmd.Parameters.AddWithValue("@productName", product.product_name);
+                cmd.Parameters.AddWithValue("@productPrice", product.product_price);
 
                 var rowsAffected = await cmd.ExecuteNonQueryAsync();
 
-                if (rowsAffected > 0)
+                if (rowsAffected == 0)
                 {
-                    return Ok("Product created successfully");
+                    return StatusCode(500, "Error: Product creation failed.");
                 }
-                else
-                {
-                    return BadRequest("Failed to create product");
-                }
+
+                return StatusCode(201, "Product created successfully.");
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Error: {ex.Message}");
             }
         }
+
 
 
 
         //DELETE+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         [HttpDelete("{id}")]
-        public async Task<ActionResult> DeleteProduct(int id)
+        public async Task<IActionResult> DeleteProduct(int id)
         {
             try
             {
                 await using var connection = new NpgsqlConnection(connectionString);
                 await connection.OpenAsync();
 
-                var sql = "DELETE FROM products WHERE id = @productId";
+                var sql = "DELETE FROM products WHERE product_id = @productId";
                 await using var cmd = new NpgsqlCommand(sql, connection);
-                cmd.Parameters.AddWithValue("productId", id);
+                cmd.Parameters.AddWithValue("@productId", id);
 
                 var rowsAffected = await cmd.ExecuteNonQueryAsync();
 
-                if (rowsAffected > 0)
+                if (rowsAffected == 0)
                 {
-                    return Ok("Product deleted successfully");
+                    return NotFound();
                 }
-                else
-                {
-                    return NotFound("Product not found");
-                }
+
+                return NoContent();
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Error: {ex.Message}");
             }
         }
+
 
     }
 }
