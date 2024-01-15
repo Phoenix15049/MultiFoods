@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using MultiFoods_Backend.Models;
+using MultiFoods_Backend.Services;
 using Npgsql;
+using System.Security.AccessControl;
 
 
 namespace MultiFoods_Backend.Controllers
@@ -13,36 +16,21 @@ namespace MultiFoods_Backend.Controllers
 
         private readonly string connectionString = "Port=1382;Host=localhost;Database=MultiFoodsBeta;Username=postgres;Persist Security Info=True;Password=09331318893";
 
+        public DBQueryManager dbqm = new DBQueryManager();
 
         //GET+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<string>>> GetProducts()
+        public async Task<IEnumerable<string>> GetProducts()
         {
-            try
-            {
-                await using var connection = new NpgsqlConnection(connectionString);
-                await connection.OpenAsync();
+            
+            Task<IEnumerable<string>> result = dbqm.GetAll("SELECT product_price FROM products",0);
+            return await result;
 
-                var sql = "SELECT * FROM products";
-                await using var cmd = new NpgsqlCommand(sql, connection);
 
-                await using var reader = await cmd.ExecuteReaderAsync();
 
-                var products = new List<string>();
 
-                while (await reader.ReadAsync())
-                {
-                    // Adjust index based on your column order or use column names directly
-                    var productName = reader.GetString(1);
-                    products.Add(productName);
-                }
 
-                return Ok(products);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error: {ex.Message}");
-            }
+
         }
 
 
