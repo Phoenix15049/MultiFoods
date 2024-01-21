@@ -37,7 +37,7 @@ public class CustomerController : ControllerBase
 
         return Ok(customer);
     }
-    [Authorize]
+    
     [HttpPost]
     public IActionResult CreateCustomer([FromBody] CustomerDTO customer)
     {
@@ -72,7 +72,7 @@ public class CustomerController : ControllerBase
         return NoContent();
     }
     [HttpPost("Login")]
-    public IActionResult Login([FromBody] CustomerDTO customer)
+    public IActionResult Login([FromBody] LoginDTO customer)
     {
         CustomerDTO dbUser = _customerRepository.GetAllCustomers().Where(x => x.Phone == customer.Phone && x.Password == customer.Password).FirstOrDefault();
         if (dbUser == null)
