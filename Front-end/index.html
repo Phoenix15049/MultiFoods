@@ -1,0 +1,3578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>M_foods</title>
+
+    <!-- Google Font Family Link Start -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Fjalla+One"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+    />
+
+    <!-- Google Font Family Link End -->
+
+    <!-- Bootstrap Link Start-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-slider.css" rel="stylesheet" />
+    <!-- Bootstrap Link End-->
+    <!-- Iconmoon Link Start-->
+    <link href="assets/css/iconmoon.css" rel="stylesheet" />
+    <!-- Iconmoon Link End-->
+    <!-- Animate Link Start-->
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <!-- Animate Link End-->
+    <!-- Chosen Link Start-->
+    <link href="assets/css/chosen.css" rel="stylesheet" />
+    <!-- Chosen Link End-->
+    <!-- Swiper Link Start-->
+    <link href="assets/css/swiper.css" rel="stylesheet" />
+    <!-- Swiper Link End-->
+    <!-- Woocommerce Link Start-->
+    <link href="assets/css/woocommerce.css" rel="stylesheet" />
+    <!-- Woocommerce Link End-->
+    <!-- Pretty Photo Link Start-->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
+    <!-- Pretty Photo Link End-->
+    <!-- Jquery UI Link Start-->
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+    <!-- Jquery UI Link End-->
+    <!-- Themes / plugin Link Start-->
+    <link href="style.css" rel="stylesheet" />
+    <link href="assets/css/cs-foodbakery-plugin.css" rel="stylesheet" />
+    <link href="assets/css/color-single-restaurant.css" rel="stylesheet" />
+    <link href="assets/css/widget.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link href="assets/css/rtl.css" rel="stylesheet" />
+    <!-- Themes / plugin Link End-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+    <style>
+      .mapouter {
+        position: relative;
+        text-align: right;
+        height: 180px;
+        width: 100%;
+      }
+
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 180px;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Main Wrapper-->
+    <div class="wrapper">
+      <!-- Header Start -->
+      <header
+        id="header"
+        class="sticky-header header-full-width transparent-header default"
+      >
+        <div class="main-header">
+          <div class="wide">
+            <div class="row">
+              <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="logo">
+                  <figure>
+                    <a href="#" class="light-logo">
+                      <img
+                        src="A:\main project restaurant\MultiFoods\Front-end\assets/234%20(1).svg  "
+                        style="height: 130px  ; margin-top: -40px ; margin-bottom: -30px ; margin-right : -10px"
+
+                        alt="Buddy Day"
+                      />
+                    </a>
+                    <a href="#" class="dark-logo">
+                      <img
+                      src="A:\main project restaurant\MultiFoods\Front-end\assets/234%20(1).svg  "
+                      style="height: 130px  ; margin-top: -40px ; margin-bottom: -30px"
+
+                        alt="Buddy Day"
+                      />
+                    </a>
+                  </figure>
+                </div>
+                <div class="main-location">
+                  <ul>
+                    <li class="location-has-children">
+                      <a href="#"
+                        ><i class="icon-compass-with-white-needles"></i>لیست
+                        غذاها</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-19-1.png"
+                            />کباب و بار بیکیو</a
+                          ><span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-22-1.png"
+                            />خورشت و چلو
+                          </a>
+                          <span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-03-1.png"
+                            />برگر و ساندویچ
+                          </a>
+                          <span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-07-1.png"
+                            />خوراک ها</a
+                          >
+                          <span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-01-1.png"
+                            />سوپ و پیش غذا</a
+                          >
+                          <span></span>
+                        </li>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-23-1.png"
+                            />نوشیدنی سرد</a
+                          >
+                          <span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-28-1.png"
+                            />دسر</a
+                          ><span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-11-1.png"
+                            />صبحانه</a
+                          >
+                          <span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-12-1.png"
+                            />غذاهای دریایی</a
+                          >
+                          <span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-26-1.png"
+                            />بستنی</a
+                          >
+                          <span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-15-1.png"
+                            />پاستا و لازانیا</a
+                          >
+                          <span></span>
+                        </li>
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-29-1.png"
+                            />پیتزا </a
+                          ><span></span>
+                        </li>
+                       
+                        <li>
+                          <a href="listings.html"
+                            ><img
+                              alt=""
+                              src="assets/extra-images/food-icon-02-1.png"
+                            />نوشیدنی گرم</a
+                          ><span></span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="location-has-children choose-location">
+                      <a href="#"
+                        ><i class="icon-location-pin2"></i>انتخاب آدرس</a
+                      >
+                      <ul>
+                        <li class="select-location">
+                          <div class="foodbakery-locations-fields-group">
+                            <form action="#">
+                              <span
+                                id="foodbakery_radius_location_open"
+                                class="foodbakery-radius-location"
+                                ><i class="icon-target5"></i
+                              ></span>
+                              <span
+                                class="foodbakery-input-cross foodbakery-input-cross-header"
+                                style="display: none"
+                              >
+                                <i class="icon-cross"></i
+                              ></span>
+                              <input
+                                type="text"
+                                value=""
+                                name="location"
+                                placeholder="All Locations"
+                                autocomplete="off"
+                              />
+
+                              <span
+                                ><span class="loc-icon-holder"
+                                  ><i class="icon-target3"></i></span
+                              ></span>
+                              <div
+                                class="select-location"
+                                id="foodbakery-radius-range622192"
+                                style="display: none"
+                              >
+                                <div class="select-popup popup-open">
+                                  <a
+                                    id="location_close_popup622192"
+                                    href="javascript:0;"
+                                    class="location-close-popup"
+                                  >
+                                    <i class="icon-times"></i
+                                  ></a>
+                                  <input
+                                    type="hidden"
+                                    class="foodbakery-radius"
+                                    name="foodbakery_radius"
+                                    value="10"
+                                  />
+                                  <p>Show with in</p>
+                                  <input
+                                    id="ex16b313324"
+                                    type="text"
+                                    data-value="10"
+                                    value="10"
+                                    style="display: none"
+                                  />
+                                  <script>
+                                    jQuery(document).ready(function () {
+                                      var elem = jQuery("#ex16b313324");
+                                      if (elem.length != "") {
+                                        elem.slider({
+                                          step: 1,
+                                          min: 0,
+                                          max: 500,
+                                          value: 10,
+                                        });
+                                        elem.on("slideStop", function () {
+                                          var rang_slider_val = elem.val();
+                                          jQuery(
+                                            "#ex16b313324CurrentSliderValLabel"
+                                          ).html(rang_slider_val);
+                                          jQuery(
+                                            "#range-hidden-foodbakery-radius622192"
+                                          ).val(rang_slider_val);
+                                          //foodbakery_restaurant_content("622192");
+                                        });
+                                        elem.on("slide", function () {
+                                          jQuery(
+                                            "#ex16b313324CurrentSliderValLabel"
+                                          ).html(elem.val());
+                                        });
+                                      }
+
+                                      $(
+                                        "#foodbakery_radius_location_open"
+                                      ).click(function () {
+                                        $(
+                                          "#foodbakery-radius-range622192"
+                                        ).show();
+                                      });
+                                      $("#location_close_popup622192").click(
+                                        function () {
+                                          $(
+                                            "#foodbakery-radius-range622192"
+                                          ).hide();
+                                        }
+                                      );
+                                    });
+                                  </script>
+                                  <span
+                                    >Miles:
+                                    <span id="ex16b313324CurrentSliderValLabel"
+                                      >10</span
+                                    ></span
+                                  ><br />
+                                  <p class="my-location">
+                                    of
+                                    <i class="cs-color icon-location-arrow"></i
+                                    ><a
+                                      id="foodbakery-geo-location-all"
+                                      class="cs-color foodbakery-geo-location313324"
+                                      href="javascript:void(0)"
+                                      >My location</a
+                                    >
+                                  </p>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </li>
+                        <li class="popular-location">مکان های پر تردد</li>
+                        <li>
+                          <ul>
+                            <li><a href="#">خانه</a></li>
+                            <li><a href="#">دانشگاه</a></li>
+                            <li><a href="#">امینیان</a></li>
+                            <li><a href="#">ریحان</a></li>
+                            <li><a href="#">خونه</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="login-option">
+                  <a
+                    class="cs-color cs-popup-joinus-btn login-popup"
+                    data-target="#sign-in"
+                    data-toggle="modal"
+                    href="#user-register"
+                    >عضویت / ورود</a
+                  >
+                </div>
+                <div class="main-nav">
+                  <nav id="site-navigation" class="main-navigation">
+                    <ul id="menu-main-menu" class="primary-menu">
+                      <li><a href="main page.html">صفحه ی اصلی</a></li>
+                      <li><a href="how-it-works.html">درباره ی سایت</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="#">موارد بیشتر</a>
+                        <ul>
+                          <li class=""><a href="faq.html">سوالات متداول</a></li>
+                          <li class="">
+                            <a href="search-result.html">نتایج جستجو</a>
+                          </li>
+                        </ul>
+                        <!--End Sub Menu -->
+                      </li>
+                      <li class="">
+                        <a href="blog-detail.html">بلاگ ها</a>
+                       
+                        <!--End Sub Menu -->
+                      </li>
+                      <li><a href="#">سبد خرید</a></li>
+                      <li class="#"><a href="contact-us.html">راه های ارتباظی</a></li>
+                    </ul>
+                  </nav>
+                  <!-- .main-navigation -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Header End -->
+      <!-- Main Section Start -->
+      <div class="main-section">
+        <!-- Home Pages Elements Strat -->
+        <div
+          class="page-section nopadding cs-nomargin"
+          style="
+            margin-top: 0px;
+            padding-top: 250px;
+            padding-bottom: 230px;
+            margin-bottom: 0px;
+            background: url(assets/extra-images/single-foodbakery-demo.jpg)
+              no-repeat center / cover;
+          "
+        >
+          <!-- Container Start -->
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="column-content">
+                  <h1
+                    style="
+                      text-align: center;
+                      display: block;
+                      color: #ffffff !important;
+                      line-height: 65px !important;
+                    "
+                  >
+                    The more The Better
+                  </h1>
+                  <div
+                    style="
+                      font-size: 35px;
+                      text-align: center;
+                      font-style :oblique;
+                      display: block;
+                      color: #000000 !important;
+                      margin-top: 0px !important;
+                      margin-bottom: 0px;
+                      line-height: 65px !important;
+                    "
+                  >
+                    هرچی بیشتر بهتر
+                  </div>
+                  <br />
+                  <h5
+                    style="
+                      font-size: 30px;
+                      color: #9e9898 !important;
+                      text-align: center;
+                      margin-top: 0px !important;
+                    "
+                  >
+                    Welcome to M-Foods
+                  </h5>
+                </div>
+              </div>
+              <div
+                class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                style="height: 2px"
+              ></div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="contact-area">
+                  <span class="time">
+                    <a
+                      href="#"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title=""
+                      data-original-title="ساعت کاری : 24 ساعت هر روز کاری "
+                      ><i class="icon-clock-o"></i
+                    ></a>
+                  </span>
+                  <span class="phone">
+                    <a
+                      href="#"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title=""
+                      data-original-title=" +98-9398535775 : شماره تماس"
+                      ><i class="icon-phone5"></i
+                    ></a>
+                  </span>
+                  <span class="location">
+                    <a
+                      href="#"
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title=""
+                      data-original-title="ایران - دانشگاه نوشیروانی "
+                      ><i class="icon-location-pin"></i
+                    ></a>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- end section row -->
+          </div>
+          <!-- End Container Start -->
+        </div>
+        <div
+          class="page-section nopadding cs-nomargin"
+          style="
+            margin-top: -15px;
+            padding-top: 30px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            background:#b02121;
+          "
+        >
+          <!-- Container Start -->
+          <div class="container">
+            <div class="row">
+              <div
+                class="section-fullwidth col-lg-12 col-md-12 col-sm-12 col-xs-12"
+              >
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="cs-calltoaction simple">
+                      <div class="cs-text">
+                        <strong style="color: #ffffff !important"
+                          >تخفیف ویژه به مناسبت بازگشایی</strong
+                        >
+                        <span style="color: rgb(0, 0, 0)"
+                          >به مناسبت باز گشایی این سایت هفته ی جاری را با تخفیف خرید کنید</span
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        class="csborder-color cs-color"
+                        style="
+                          background-color: #f7f7f7 !important;
+                          color: #b02121 !important;
+                        "
+                        >برای موارد بیشتر کلیک کنید</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- end section row -->
+              </div>
+            </div>
+          </div>
+          <!-- End Container Start -->
+        </div>
+        <div
+          class="page-section"
+          style="
+            transform: none;
+            margin-top: 0px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            margin-bottom: 0px;
+          "
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 sticky-sidebar">
+                <div class="filter-toggle">
+                  <span class="filter-toggle-text">Categories By</span
+                  ><i class="icon-chevron-down"></i>
+                </div>
+                <div class="filter-wrapper">
+                  <div class="categories-menu">
+                    <h6><i class="icon-restaurant_menu"></i>منو دسته بندی ها</h6>
+                    <ul class="menu-list">
+                      <li class="active">
+                        <a href="#" class="menu-category-link"> پیتزا </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="menu-category-link">
+                          پیش غذا </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="menu-category-link"> کباب </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="menu-category-link"> برگر و ساندویچ </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="menu-category-link"> غذا های ویژه </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="menu-category-link"> سوپ </a>
+                      </li>
+                      <!-- <li class="">
+                        <a href="#" class="menu-category-link"> خوراک مرغ </a>
+                      </li> -->
+                      <li class="">
+                        <a href="#" class="menu-category-link"> پنینی </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="menu-category-link"> پیش غذا </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="menu-category-link">
+                          نوشیدنی
+                        </a>
+                      </li>
+                      <!-- <li class="">
+                        <a href="#" class="menu-category-link"> برنج و چلوها </a>
+                      </li> -->
+                      <li class="">
+                        <a href="#" class="menu-category-link"> دسر و کیک </a>
+                      </li>
+                      <li class="">
+                        <a href="#" class="menu-category-link"> سس ها </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-9 col-xs-12">
+                <div class="tabs-holder horizontal">
+                  <ul class="stickynav-tabs nav nav-tabs">
+                    <li class="active">
+                      <a data-toggle="tab" href="#home"
+                        ><i class="icon- icon-room_service"></i>منو</a
+                      >
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#menu1"
+                        ><i class="icon- icon-textsms"></i>نظرات  (1) </a
+                      >
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#menu2"
+                        ><i class="icon- icon-food"></i>رزرو میز
+                      </a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#menu3"
+                        ><i class="icon- icon-info3"></i>مشخصات رستورا </a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                      <div class="menu-itam-holder">
+                        <div class="field-holder sticky-search">
+                          <input
+                            id="menu-srch-6272"
+                            data-id="6272"
+                            class="input-field dev-menu-search-field"
+                            type="text"
+                            placeholder="Search food item"
+                          />
+                        </div>
+                        <div id="menu-item-list-6272" class="menu-itam-list">
+                          <div class="element-title" id="menu-category-0">
+                            <h5 class="text-color">پیتزا</h5>
+                            <span
+                              ></span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo24-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo24-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>پیتزا مرغ ویژه</h6>
+                                <span>مرغ گریل شده, فلفل دلمه, غارچ ,ذرت , سس مخصوص , سبزیجات مخصوص  , پنیر موتزارلا و گودا  </span>
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a
+                                      data-toggle="tooltip"
+                                      title="این یک موز است"
+                                      ><img
+                                        src="assets/extra-images/natural-item03.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">300T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-0"
+                                  ><i class="icon-plus4 text-color"></i>
+                                  <div
+                                    class="foodbakery-button-loader"
+                                    style="display: block"
+                                  >
+                                    <div class="spinner">
+                                      <div class="double-bounce1"></div>
+                                      <div class="double-bounce2"></div>
+                                    </div>
+                                  </div>
+                                </a>
+                                <span id="add-menu-loader-0"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo23-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo23-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>پیتزای رست بیف مخصوص</h6>
+                                <span>گوشت ریش شده , فلفل دلمه, غارچ ,ذرت , سس مخصوص , سبزیجات مخصوص  , پنیر موتزارلا و گودا  </span>
+
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">400T</span>
+                                <a
+                                  href="#"
+                                  data-toggle="modal"
+                                  data-target="#extras-0-1"
+                                  class="dev-adding-menu-btn"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-1"></span>
+                              </div>
+                              <div
+                                class="modal fade menu-extras-modal"
+                                id="extras-0-2"
+                                tabindex="-1"
+                                role="dialog"
+                              >
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                      >
+                                        <span aria-hidden="true">×</span>
+                                      </button>
+                                      <h2><a>موارد بیشتر</a></h2>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="menu-selection-container">
+                                        <div class="extras-detail-main">
+                                          <h3>Drinks</h3>
+                                          <div class="extras-detail-options">
+                                            <div class="extras-detail-att">
+                                              <label for="extra-1">
+                                                <input
+                                                  type="radio"
+                                                  id="extra-1"
+                                                  name="extra-0-1"
+                                                />
+                                                <span class="extra-title"
+                                                  >نوشیدنی سرد</span
+                                                >
+                                                <span class="extra-price"
+                                                  >....</span
+                                                >
+                                              </label>
+                                            </div>
+                                            <div class="extras-detail-att">
+                                              <label for="extra-2">
+                                                <input
+                                                  type="radio"
+                                                  id="extra-2"
+                                                  name="extra-0-1"
+                                                />
+                                                <span class="extra-title"
+                                                  >نوشابه</span
+                                                >
+                                                <span class="extra-price"
+                                                  >8T</span
+                                                >
+                                              </label>
+                                            </div>
+                                            <!-- <div class="extras-detail-att">
+                                              <label for="extra-3">
+                                                <input
+                                                  type="radio"
+                                                  id="extra-3"
+                                                  name="extra-0-1"
+                                                />
+                                                <span class="extra-title"
+                                                  >more food</span
+                                                >
+                                                <span class="extra-price"
+                                                  >gheimat</span
+                                                >
+                                              </label>
+                                            </div> -->
+                                          </div>
+                                          <div
+                                            class="extras-detail-selected"
+                                          ></div>
+                                        </div>
+                                        <div class="extras-btns-holder">
+                                          <button
+                                            style="display: none"
+                                            class="add-extra-menu-btn input-button-loader"
+                                          >
+                                            Add to Menu
+                                          </button>
+                                          <a
+                                            href="#"
+                                            class="reset-menu-fields btn"
+                                            >Reset Fields</a
+                                          >
+                                          <span class="extra-loader"></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo21-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo21-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>پیتزا مخلوط</h6>
+                                <span>ژامبون و سوسیس  , فلفل دلمه, غارچ ,ذرت , سس مخصوص , سبزیجات مخصوص  , پنیر موتزارلا و گودا  </span>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">260T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-2"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-2"></span>
+                              </div>
+                            </li>
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/blogs-food-bakery-05.jpg"
+                                  ><img
+                                    src="assets/extra-images/blogs-food-bakery-05-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>food name</h6>
+                                <span
+                                  >mavad</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">price</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-3"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-3"></span>
+                              </div>
+                            </li> -->
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo19-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo19-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>پیتزا سبزیجات</h6>
+                                <span>سبزیجات مخصوص , قارچ و پنیر وگان</span>
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="این یک پیازه"
+                                      ><img
+                                        src="assets/extra-images/natural-item02.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">200T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-4"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-4"></span>
+                              </div>
+                            </li>
+                           <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/blogs-food-bakery-05.jpg"
+                                  ><img
+                                    src="assets/extra-images/blogs-food-bakery-05-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>food name</h6>
+                                <span
+                                  >mavad</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">price</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-3"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-3"></span>
+                              </div>
+                            </li> -->
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/blogs-food-bakery-05.jpg"
+                                  ><img
+                                    src="assets/extra-images/blogs-food-bakery-05-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>food name</h6>
+                                <span
+                                  >mavad</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">price</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-3"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-3"></span>
+                              </div>
+                            </li> -->
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo15-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo15-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>پیتزا هالوپنو</h6>
+                                <span>هالوپینو تازه  , فلفل دلمه, غارچ ,ذرت , سس مخصوص , سبزیجات مخصوص  , پنیر موتزارلا و گودا  </span>
+                                
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="علف O_o"
+                                      ><img
+                                        src="assets/extra-images/natural-item04.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                  <li>
+                                    <a data-toggle="tooltip" title="فلفل : )"
+                                      ><img
+                                        src="assets/extra-images/natural-item05.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">300T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-7"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-7"></span>
+                              </div>
+                            </li>
+                              <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/blogs-food-bakery-05.jpg"
+                                  ><img
+                                    src="assets/extra-images/blogs-food-bakery-05-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>food name</h6>
+                                <span
+                                  >mavad</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">price</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-3"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-3"></span>
+                              </div>
+                            </li> -->
+
+                            <!-- start for new groupe to cteate ///////////////// -->
+                          <!-- </ul>
+                          <div class="element-title" id="menu-category-1">
+                            <h5 class="text-color">دسته ی جدید</h5>
+                            <span
+                              >توضیحات دسته.</span
+                            >
+                          </div> -->
+                          <!-- <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo13-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo13-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>......</h6>
+                                <span
+                                  >Cheese, tomatoes,..</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">price </span>
+                                <a
+                                  href="#"
+                                  data-toggle="modal"
+                                  data-target="#extras-1-9"
+                                  class="dev-adding-menu-btn"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-9"></span>
+                              </div>
+                              <div
+                                class="modal fade menu-extras-modal"
+                                id="extras-1-9"
+                                tabindex="-1"
+                                role="dialog"
+                              >
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                      >
+                                        <span aria-hidden="true">×</span>
+                                      </button>
+                                      <h2><a>Extras</a></h2>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="menu-selection-container">
+                                        <div class="extras-detail-main">
+                                          <h3>Extras</h3>
+                                          <div class="extras-detail-options">
+                                            <div class="extras-detail-att">
+                                              <label for="extra-0-0-9">
+                                                <input
+                                                  type="radio"
+                                                  id="extra-0-0-9"
+                                                  name="extra-0-9"
+                                                />
+                                                <span class="extra-title"
+                                                  >Cold Drink</span
+                                                >
+                                                <span class="extra-price"
+                                                  >£2.50</span
+                                                >
+                                              </label>
+                                            </div>
+                                            <div class="extras-detail-att">
+                                              <label for="extra-1-0-9">
+                                                <input
+                                                  type="radio"
+                                                  id="extra-1-0-9"
+                                                  name="extra-0-9"
+                                                />
+                                                <span class="extra-title"
+                                                  >Souce</span
+                                                >
+                                                <span class="extra-price"
+                                                  >£1.50</span
+                                                >
+                                              </label>
+                                            </div>
+                                            <div class="extras-detail-att">
+                                              <label for="extra-2-0-9">
+                                                <input
+                                                  type="radio"
+                                                  id="extra-2-0-9"
+                                                  name="extra-0-9"
+                                                />
+                                                <span class="extra-title"
+                                                  >Chees</span
+                                                >
+                                                <span class="extra-price"
+                                                  >£0.80</span
+                                                >
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="extras-detail-selected"
+                                          ></div>
+                                        </div>
+                                        <div class="extras-btns-holder">
+                                          <button
+                                            style="display: none"
+                                            class="add-extra-menu-btn input-button-loader"
+                                          >
+                                            Add to Menu
+                                          </button>
+                                          <a
+                                            href="#"
+                                            class="reset-menu-fields btn"
+                                            >Reset Fields</a
+                                          >
+                                          <span class="extra-loader"></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul> -->
+                          <!-- /////////////////////////////end the group to create  -->
+                          <div class="element-title" id="menu-category-3">
+                            <h5 class="text-color">کباب</h5>
+                            <span
+                              >انواع کباب را با ما تجربه کنید</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo09-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo09-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>خوراک کباب کوبیده</h6>
+                                <span
+                                  >کباب کوبیده گوشت مخلوط گوساله و گوسفنده به همراه دورچین(2سیخ)</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">150T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-12"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-12"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/blogs-food-bakery-04.jpg"
+                                  ><img
+                                    src="assets/extra-images/blogs-food-bakery-04-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>جوجه کباب</h6>
+                                <span
+                                  >کباب مرغ زعفرانی به همراه دورچین(2سیخ)</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">120T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-13"
+                                  data-id="13"
+                                  data-cid="3"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-13"></span>
+                              </div>
+                            </li>
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a href="assets/extra-images/fb_masonary_3.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_3-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Kebabs With Naan</h6>
+                                <span
+                                  >...</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£...</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-14"
+                                  data-id="14"
+                                  data-cid="3"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-14"></span>
+                              </div>
+                            </li> -->
+
+
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/blogs-food-bakery-03.jpg"
+                                  ><img
+                                    src="assets/extra-images/blogs-food-bakery-03-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Chapal Kebab Regular</h6>
+                                <span
+                                  >Kababs made with </span
+                                >
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="Vegitable"
+                                      ><img
+                                        src="assets/extra-images/natural-item04.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£0</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-15"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-15"></span>
+                              </div>
+                            </li> -->
+
+
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a href="assets/extra-images/fb_masonary_9.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_9-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Kebabs With nan</h6>
+                                <span
+                                  >For the kebabs</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£0</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-16"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-16"></span>
+                              </div>
+                            </li> -->
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a href="assets/extra-images/fb_masonary_7.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_7-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Chicken Kebab Regular</h6>
+                                <span
+                                  >Kababs made ...</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£0-</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-17"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-17"></span>
+                              </div>
+                            </li> -->
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a href="assets/extra-images/fb_masonary_1.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_1-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Chicken Kebab With Nan</h6>
+                                <span
+                                  >.....</span
+                                >
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="mokh morgh"
+                                      ><img
+                                        src="assets/extra-images/natural-item01.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£0</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-18"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-18"></span>
+                              </div>
+                            </li> -->
+
+
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/blogs-food-bakery-02.jpg"
+                                  ><img
+                                    src="assets/extra-images/blogs-food-bakery-02-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Chicken Kebab</h6>
+                                <span
+                                  >....
+                                </span>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£0</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-19"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-19"></span>
+                              </div>
+                            </li> -->
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo09-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo09-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>شیش لیک</h6>
+                                <span
+                                  >
+                                  کباب گوشت  گوسفندی به همراه دورچین(2سیخ)
+                                </span>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">200T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-20"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-20"></span>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="element-title" id="menu-category-4">
+                            <h5 class="text-color">برگر و ساندویچ</h5>
+                            <span
+                              >ساندویچ و برگرهای ویژه</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a href="assets/extra-images/fb_masonary_9.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_9-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>چیز برگر</h6>
+                                <span>گوشت برگر دست ساز بهمراه پنیر گودا کاهو, گوجه و خیارشور</span>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">100t</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-21"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-21"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/blogs-food-bakery-11.jpg"
+                                  ><img
+                                    src="assets/extra-images/blogs-food-bakery-11-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>ماشروم برگر</h6>
+                                <span>گوشت برگر دست ساز بهمراه پنیر گوداقرچ و پنیر کاهو, گوجه و خیارشور</span>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">150T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-22"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-22"></span>
+                              </div>
+                            </li>
+                            
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/fb_masonary_4-683x1024.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_4-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>ساندویچ مخصوص</h6>
+                                <span
+                                     >گوشت رست بیف بهمراه مرغ گریل پنیر گوداقرچ و پنیر کاهو, گوجه و خیارشور</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">200T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-24"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-24"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/blogs-food-bakery-12.jpg"
+                                  ><img
+                                    src="assets/extra-images/blogs-food-bakery-12-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>کباب ترکی</h6>
+                                <span>گوشت یا مرغ  به همراه نان مخصوص و پیاز و جعفری /span>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">200T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-25"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-25"></span>
+                              </div>
+                            </li>
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a href="assets/extra-images/fb_masonary_3.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_3-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Kebabs With Naan</h6>
+                                <span
+                                  >...</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£...</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-14"
+                                  data-id="14"
+                                  data-cid="3"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-14"></span>
+                              </div>
+                            </li> -->
+
+
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a href="assets/extra-images/fb_masonary_3.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_3-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Kebabs With Naan</h6>
+                                <span
+                                  >...</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£...</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-14"
+                                  data-id="14"
+                                  data-cid="3"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-14"></span>
+                              </div>
+                            </li> -->
+
+
+                             <!-- <li>
+                              <div class="image-holder">
+                                <a href="assets/extra-images/fb_masonary_3.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_3-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Kebabs With Naan</h6>
+                                <span
+                                  >...</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£...</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-14"
+                                  data-id="14"
+                                  data-cid="3"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-14"></span>
+                              </div>
+                            </li> -->
+
+                          </ul>
+                          <div class="element-title" id="menu-category-5">
+                            <h5 class="text-color">غذا های ویژه</h5>
+                            <span
+                              >خوراک های مخصوص و ویژه</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a href="assets/extra-images/fb_masonary_8.jpg"
+                                  ><img
+                                    src="assets/extra-images/fb_masonary_8-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>خوراک ماهیچه</h6>
+                                <span
+                                  >پانصد گرم ماهیچه گوسفندی بهمراه دورچین ویژه</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">400T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-29"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-29"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo13-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo13-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>خوراک مرغ گریل</h6>
+                                <span
+                                  >یک عدد مرغ کامل به همراه دورچین مخصوص</span
+                                >
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="بروکلی *-*"
+                                      ><img
+                                        src="assets/extra-images/natural-item04.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">400T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-30"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-30"></span>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="element-title" id="menu-category-6">
+                            <h5 class="text-color">سوپ و آش</h5>
+                            <span
+                              >سوپ گرم و آش گرم</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo12-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo12-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>سوپ مرغ و جو</h6>
+                                <span
+                                  >مرغ و جو به همراه سبزیجات معطر</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">80T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-31"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-31"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo10-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo10-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>سوپ شیر و خامه</h6>
+                                <span
+                                  >شیر و خامه تازه به همراه جو و سبزیجات</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">90T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-32"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-32"></span>
+                              </div>
+                            </li>
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo07-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo07-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Chickenss ssss</h6>
+                                <span
+                                  >ssss</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£4.99</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-33"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-33"></span>
+                              </div>
+                            </li> -->
+                         
+                            
+                              <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo07-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo07-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Chickenss ssss</h6>
+                                <span
+                                  >ssss</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">£4.99</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-33"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-33"></span>
+                              </div>
+                            </li> -->
+                         
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo11-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo11-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>آش</h6>
+                                <span
+                                  >آش با مواد دلخواه
+                                </span>
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="Onion"
+                                      ><img
+                                        src="assets/extra-images/natural-item02.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                  <li>
+                                    <a data-toggle="tooltip" title="Vegitable"
+                                      ><img
+                                        src="assets/extra-images/natural-item04.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">90T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-37"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-37"></span>
+                              </div>
+                            </li>
+                            
+                          </ul>
+                          <div class="element-title" id="menu-category-8">
+                            <h5 class="text-color">پنینی</h5>
+                            <span
+                              >...</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo08-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo08-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>گوشت</h6>
+                                <span
+                                  >گوشتچرخ کرده فلفل دلمه و پنیر</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">200T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-39"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-39"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo05-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo05-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>مرغ</h6>
+                                <span
+                                >گوشت مرغ فلفل دلمه و پنیر</span
+
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">200T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-40"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-40"></span>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="element-title" id="menu-category-9">
+                            <h5 class="text-color">پیش غذا</h5>
+                            <span
+                              >غذا های سبک مناسب قبل غذا</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo19-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo19-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>سیب زمینی ویژه</h6>
+                                <span
+                                  >سیب زمینی اب پز شده بهمراه پنیر و سبزیجات</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">80T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-41"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-41"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo19-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo19-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>بال گریل </h6>
+                                <span
+                                  >چهار تکه بال مخصوص بهمراه دیپ چدار</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">110T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-42"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-42"></span>
+                              </div>
+                            </li>
+                            <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo24-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo24-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Chicken</h6>
+                                <span
+                                  >Chicken </span
+                                >
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="Onion"
+                                      ><img
+                                        src="assets/extra-images/natural-item02.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">$00</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-43"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-43"></span>
+                              </div>
+                            </li> -->
+                          
+                          </ul>
+                          <div class="element-title" id="menu-category-10">
+                            <h5 class="text-color">نوشیدنی</h5>
+                            <span
+                              >نوشیدنی گرم و خنک</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo22-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo22-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>نوشابه </h6>
+                                <span
+                                  >یک عدد نوشابه قوطی انتخاب رنگ در توضیحات</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">20T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-45"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-45"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo21-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo21-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>ایس لته</h6>
+                                <span
+                                  >...</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">75T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-46"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-46"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo20-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo20-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>دلستر</h6>
+                                <span
+                                  >یک قوطی دلستر هی دی</span
+                                >
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="Contain Egg"
+                                      ><img
+                                        src="assets/extra-images/natural-item01.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">25T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-47"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-47"></span>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="element-title" id="menu-category-11">
+                            <h5 class="text-color">دسر و کیک</h5>
+                            <span>
+                              کیک و دسر ها</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo18-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo18-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>چیز کیک نیویورکی</h6>
+                                <span
+                                  >چیز کیک مخصوص</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">80T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-48"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-48"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo19-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo19-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>کیک خیس</h6>
+                                <span
+                                  >کیک شکولاتی استراحت داده شده در دنت</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">80T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-49"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-49"></span>
+                              </div>
+                            </li>
+                             <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo24-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo24-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Chicken</h6>
+                                <span
+                                  >Chicken </span
+                                >
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="Onion"
+                                      ><img
+                                        src="assets/extra-images/natural-item02.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">$00</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-43"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-43"></span>
+                              </div>
+                            </li> -->
+                          
+                             <!-- <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo24-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo24-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>Chicken</h6>
+                                <span
+                                  >Chicken </span
+                                >
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="Onion"
+                                      ><img
+                                        src="assets/extra-images/natural-item02.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">$00</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-43"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-43"></span>
+                              </div>
+                            </li> -->
+                          
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo15-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo15-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>بستنی</h6>
+                                <span
+                                  >سه اسکوپ بستنی به انتخاب خودتون</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">80T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-52"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-52"></span>
+                              </div>
+                            </li>
+                          </ul>
+                          
+                          <div class="element-title" id="menu-category-13">
+                            <h5 class="text-color">سس ها</h5>
+                            <span
+                              >سس های دست ساز و کاخانه ای</span
+                            >
+                          </div>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo11-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo11-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>سس بشامل</h6>
+                                <span
+                                  >کره آرد و شیر</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">30T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-56"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-56"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo09-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo09-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>دیپ چدار</h6>
+                                <span
+                                  >چدار اب شده</span
+                                >
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a data-toggle="tooltip" title="Chille"
+                                      ><img
+                                        src="assets/extra-images/natural-item05.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">30T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-57"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-57"></span>
+                              </div>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo08-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo08-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>سس قارچ</h6>
+                                <span
+                                  >قارچ خامه و آرد و شیر</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">30T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-58"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-58"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo06-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo06-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>سس چیلی</h6>
+                                <span
+                                  >گوجه و چیلی خورد شده</span
+                                >
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">30T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-59"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-59"></span>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="image-holder">
+                                <a
+                                  href="assets/extra-images/cover-photo05-1024x187.jpg"
+                                  ><img
+                                    src="assets/extra-images/cover-photo05-150x150.jpg"
+                                    alt=""
+                                /></a>
+                              </div>
+                              <div class="text-holder">
+                                <h6>سس یکبار مصرف</h6>
+                                <span>
+                                  کچاپ فرانسه مایونز و... یکبار مصرف</span
+                                >
+                                <ul class="nutri-icons">
+                                  <li>
+                                    <a
+                                      data-toggle="tooltip"
+                                      title="رکب خوردی"
+                                      ><img
+                                        src="assets/extra-images/natural-item03.png"
+                                        alt=""
+                                    /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="price-holder">
+                                <span class="price">2T</span>
+                                <a
+                                  href="#"
+                                  class="restaurant-add-menu-btn restaurant-add-menu-btn-60"
+                                  ><i class="icon-plus4 text-color"></i
+                                ></a>
+                                <span id="add-menu-loader-60"></span>
+                              </div>
+                            </li>
+                          </ul>
+                          
+                        
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                      <div class="reviews-holder">
+                        <div
+                          class="add-new-review-holder"
+                          style="display: none"
+                        >
+                          <div class="row">
+                            <div
+                              class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                            >
+                              <div class="elements-title">
+                                <h3>نظر خود را بنویسید</h3>
+                                <a href="#" class="close-post-new-reviews-btn"
+                                  >بستن</a
+                                >
+                              </div>
+                            </div>
+                            <div
+                              class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                              style="text-align: center"
+                            >
+                             لطفا برای نظر دادن عضو شوید
+                            </div>
+                          </div>
+                        </div>
+                        <div class="reviwes-restaurant-holder">
+                          <div class="over-all-rating-holder">
+                            <div class="overall-ratings-container">
+                              <div class="overall-rating">
+                                <h6>نظر مشتری در باره ی  Food Bakery</h6>
+                                <ul class="reviews-box">
+                                  <li>
+                                    <em>5.0 </em>
+                                    <div class="rating-star">
+                                      <span
+                                        class="rating-box"
+                                        style="width: 100%"
+                                      ></span>
+                                    </div>
+                                    <span class="reviews-count"
+                                      >( 1 بررسی)</span
+                                    >
+                                  </li>
+                                  <li>
+                                    <div class="icon-holder">
+                                      <i class="icon-smile"></i>
+                                    </div>
+                                    <p>
+                                      <span>100%</span> پیشنهاد میشود
+
+                                    </p>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="ratings-summary-container">
+                              <div class="rating-summary">
+                                <h5>Rating summary</h5>
+                                <ul>
+                                  <li>
+                                    <span class="review-category">Service</span>
+                                    <div class="rating-star">
+                                      <span
+                                        class="rating-box"
+                                        style="width: 100%"
+                                      ></span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <span class="review-category">Quality</span>
+                                    <div class="rating-star">
+                                      <span
+                                        class="rating-box"
+                                        style="width: 100%"
+                                      ></span>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <span class="review-category">Value</span>
+                                    <div class="rating-star">
+                                      <span
+                                        class="rating-box"
+                                        style="width: 100%"
+                                      ></span>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="review-listing">
+                            <div class="elements-title">
+                              <h5>
+                                Customer Reviews For Restaurant Demo
+                                <span>1</span>
+                              </h5>
+                              <div class="sort-by">
+                                <span
+                                  class="ajax-loader-sorty-by"
+                                  style="display: none"
+                                >
+                                  <img
+                                    src="assets/images/ajax-loader.gif"
+                                    alt=""
+                                /></span>
+                                <ul class="reviews-sortby">
+                                  <li>
+                                    <span class="active-sort"
+                                      >Newest Reviews</span
+                                    >
+                                    <div class="reviews-sort-dropdown">
+                                      <form>
+                                        <div class="input-reviews">
+                                          <div class="radio-field">
+                                            <input
+                                              name="review"
+                                              id="check-1"
+                                              type="radio"
+                                              value="newest"
+                                              checked="checked"
+                                            />
+                                            <label for="check-1"
+                                              >Newest Reviews</label
+                                            >
+                                          </div>
+                                          <div class="radio-field">
+                                            <input
+                                              name="review"
+                                              id="check-2"
+                                              type="radio"
+                                              value="highest"
+                                            />
+                                            <label for="check-2"
+                                              >Highest Rating</label
+                                            >
+                                          </div>
+                                          <div class="radio-field">
+                                            <input
+                                              name="review"
+                                              id="check-3"
+                                              type="radio"
+                                              value="lowest"
+                                            />
+                                            <label for="check-3"
+                                              >Lowest Rating</label
+                                            >
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <ul class="review-restaurant">
+                              <li
+                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                              >
+                                <div class="list-holder">
+                                  <div class="review-text">
+                                    <div class="review-title">
+                                      <h6>: Best Food</h6>
+                                      <div class="rating-holder">
+                                        <div class="rating-star">
+                                          <span
+                                            style="width: 100%"
+                                            class="rating-box"
+                                          ></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <em class="review-date">25 Apr 2018</em>
+                                    <p>تجربه ای عالی</p>
+                                  </div>
+                                </div>
+                              </li>
+                              <li
+                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                              >
+                                <div class="list-holder">
+                                  <div class="review-text">
+                                    <div class="review-title">
+                                      <h6>: Best food</h6>
+                                      <div class="rating-holder">
+                                        <div class="rating-star">
+                                          <span
+                                            style="width: 100%"
+                                            class="rating-box"
+                                          ></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <em class="review-date">25 Apr 2018</em>
+                                    <p>کیفیت غذاها عالی بود</p>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                      <div class="booking-info-sec">
+                        <form
+                          name="booking-form"
+                          id="booking-form"
+                          class="booking-form"
+                          method="post"
+                        >
+                          <div class="row">
+                            <div class="booking-info">
+                              <div
+                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                              >
+                                <div class="row">
+                                  <div
+                                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                  >
+                                    <h5>رزرو میز </h5>
+                                    <p class="booking-desc">
+                                    لطفا برای رزرو مشخصات خود را وارد کنید                                  </p>
+                                  </div>
+                                  <div
+                                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="field-holder has-icon">
+                                      <i class="icon icon-user"></i
+                                      ><input
+                                        type="text"
+                                        placeholder="نام"
+                                        class="input-field"
+                                        id="first-name"
+                                        name="first-name"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="field-holder has-icon">
+                                      <i class="icon icon-user"></i
+                                      ><input
+                                        type="text"
+                                        placeholder="نام خانوادگی"
+                                        class="input-field"
+                                        id="lastname-booking"
+                                        name="lastname-booking"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="field-holder has-icon">
+                                      <i class="icon icon-envelope2"></i
+                                      ><input
+                                        type="text"
+                                        placeholder="Email شماره تماس یا"
+                                        class="input-field foodbakery-email-field"
+                                        id="email-booking"
+                                        name="email-booking"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="field-holder has-icon">
+                                      <i class="icon icon-users3"></i>
+                                      <select
+                                        class="chosen-select"
+                                        style="display: none"
+                                      >
+                                        <option selected="selected" value="">
+                                          تعداد افراد
+                                        </option>
+                                        <option value="">2 </option>
+                                        <option value="">3 </option>
+                                        <option value="">4 </option>
+                                        <option value="">5 </option>
+                                        <option value="">6 </option>
+                                        <option value="">7 </option>
+                                        <option value="">8 </option>
+
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="field-holder has-icon">
+                                      <div class="date-sec">
+                                        <i class="icon-event_available"> </i
+                                        ><input
+                                          type="text"
+                                          placeholder="تاریخ"
+                                          class="form-control booking-date"
+                                          id="date-of-booking"
+                                          name="date-of-booking"
+                                        />
+                                        <script>
+                                          jQuery(document).ready(function () {
+                                            var disabledDays = [""];
+                                            jQuery(
+                                              "#date-of-booking"
+                                            ).datepicker({
+                                              showOtherMonths: true,
+                                              firstDay: 1,
+                                              minDate: 0,
+                                              dateFormat: "dd-mm-yy",
+                                              prevText: "",
+                                              nextText: "",
+                                              monthNames: [
+                                                "Jan",
+                                                "Feb",
+                                                "Mar",
+                                                "Apr",
+                                                "May",
+                                                "Jun",
+                                                "Jul",
+                                                "Aug",
+                                                "Sep",
+                                                "Oct",
+                                                "Nov",
+                                                "Dec",
+                                              ],
+                                              beforeShow: function (
+                                                textbox,
+                                                instance
+                                              ) {
+                                                $(this)
+                                                  .parent()
+                                                  .append(
+                                                    $("#ui-datepicker-div")
+                                                  );
+                                              },
+                                              beforeShowDay: function (date) {
+                                                var day = date.getDay();
+                                                var string =
+                                                  jQuery.datepicker.formatDate(
+                                                    "dd-mm-yy",
+                                                    date
+                                                  );
+                                                var isDisabled =
+                                                  jQuery.inArray(
+                                                    string,
+                                                    disabledDays
+                                                  ) != -1;
+                                                //day != 0 disables all Sundays
+                                                return [!isDisabled];
+                                              },
+                                              onSelect: function (date) {
+                                                jQuery("#date-of-booking").val(
+                                                  date
+                                                );
+                                                load_available_time(
+                                                  date,
+                                                  "6272"
+                                                );
+                                              },
+                                            });
+                                          });
+                                        </script>
+                                        <ul class="calendar-options">
+                                          <li class="avilable">خالی</li>
+                                          <li class="unavailable">
+                                            پر
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="field-holder has-icon">
+                                      <div class="booking_time_wrapper">
+                                        <div id="time-div-time-date-of-booking">
+                                          <i class="icon-clock-o"></i>
+                                          <select
+                                            class="chosen-select foodbakery-required-field"
+                                            id="time-date-of-booking"
+                                            style="display: none"
+                                          >
+                                            <option value="">12:00 AM</option>
+                                            <option value="">12:15 AM</option>
+                                            <option value="">12:30 AM</option>
+                                            <option value="">12:45 AM</option>
+                                            <option value="">01:00 AM</option>
+                                            <option value="">01:15 AM</option>
+                                            <option value="">01:30 AM</option>
+                                            <option value="">01:45 AM</option>
+                                            <option value="">02:00 AM</option>
+                                            <option value="">02:15 AM</option>
+                                            <option value="">02:30 AM</option>
+                                            <option value="">02:45 AM</option>
+                                            <option value="">03:00 AM</option>
+                                            <option value="">03:15 AM</option>
+                                            <option value="">03:30 AM</option>
+                                            <option value="">03:45 AM</option>
+                                            <option value="">04:00 AM</option>
+                                            <option value="">04:15 AM</option>
+                                            <option value="">04:30 AM</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                  >
+                                    <div
+                                      class="field-holder has-icon field-textarea"
+                                    >
+                                      <i class="icon icon-mode_edit"></i>
+                                      <textarea
+                                        placeholder="... توضیحات"
+                                        id="contact-booking"
+                                        name="contact-booking"
+                                        class="input-field"
+                                      ></textarea>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                  >
+                                    <div class="field-holder">
+                                      <div class="submit-btn">
+                                        <button
+                                          type="button"
+                                          class="field-btn bgcolor booking-submit-btn input-button-loader"
+                                        >
+                                          Submit
+                                        </button>
+                                        <span class="booking-loader"></span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                      <div class="contact-info-detail">
+                        <h5>رستوران خیالی</h5>
+                        <p class="restaurant-desc"></p>
+                        <p>
+                          اطلاعات درمورد رستوران مورد بررسی
+                        </p>
+                        <div class="map-sec-holder">
+                          <div class="cs-map-section">
+                            <div class="cs-map">
+                              <div class="cs-map-content">
+                                <div class="mapouter">
+                                  <div class="gmap_canvas">
+                                    <img
+                                      class="img-responsive"
+                                      src="assets/extra-images/map-location.png"
+                                      alt=""
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="contact-info">
+                              <h5>Contact details</h5>
+                              <p>ایران ....</p>
+                              <ul>
+                                <li class="cell">
+                                  <i class="icon-phone"></i
+                                  ><a href="#">+98 . 00000000</a>
+                                </li>
+                                <li class="pizzaeast">
+                                  <i class="icon-globe2"></i
+                                  ><a href="#">http://www.Email.com</a>
+                                </li>
+                                <li class="email">
+                                  <i class="icon-mail5"></i
+                                  ><a class="text-color" href="#"
+                                    >Send Enquiry By Email</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="widget widget-timing">
+                              <h5>Opening Hours</h5>
+                              <ul>
+                                <li><span>Monday</span>11:00 am - 11:00 pm</li>
+                                <li><span>Tuesday</span>11:00 am - 11:00 pm</li>
+                                <li>
+                                  <span>Wednesday</span>11:00 am - 11:00 pm
+                                </li>
+                                <li>
+                                  <span>Thursday</span>11:00 am - 11:00 pm
+                                </li>
+                                <li><span>Friday</span>11:00 am - 11:00 pm</li>
+                                <li>
+                                  <span>Saturday</span>11:00 am - 11:00 pm
+                                </li>
+                                <li><span>Sunday</span>Off</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sticky-sidebar col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <div class="user-order-holder">
+                  <div class="user-order">
+                    <h6><i class="icon-shopping-basket"></i>سفارش شما</h6>
+                    <span class="error-message pre-order-msg"
+                      >این رستوران قبلیت پیش سفارش را داراست</span
+                    >
+                    <span class="discount-info" style="display: block"
+                      >کد تخفیف را میتوانید <br />
+                      در بخش پرداخت وارد کنید<br />
+                      </span
+                    >
+                    <div class="select-option dev-select-fee-option">
+                      <ul>
+                        <li>
+                          <input
+                            id="order-pick-up-fee"
+                            type="radio"
+                            name="order_fee_type"
+                          />
+                          <label for="order-pick-up-fee">پیک</label>
+                          <span>xT</span>
+                        </li>
+                        <li>
+                          <input
+                            id="order-delivery-fee"
+                            checked="checked"
+                            type="radio"
+                            name="order_fee_type"
+                          />
+                          <label for="order-delivery-fee">دلیوری</label>
+                          <span>xT</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div id="dev-menu-orders-list">
+                      <ul class="categories-order">
+                        <li>
+                          <a href="#" class="btn-cross dev-remove-menu-item"
+                            ><i class="icon-cross3"></i
+                          ></a>
+                          <a>پیتزا مرغ ویژه</a>
+                          <span class="category-price">300T</span>
+                        </li>
+                        <li>
+                          <a href="#" class="btn-cross dev-remove-menu-item"
+                            ><i class="icon-cross3"></i
+                          ></a>
+                          <a>چیز برگر</a>
+                          <span class="category-price">100T</span>
+                          
+                          <a
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#extras-0-1"
+                            class="update-menu dev-update-menu-btn"
+                            >Edit</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#" class="btn-cross dev-remove-menu-item"
+                            ><i class="icon-cross3"></i
+                          ></a>
+                          <a>سس بشامل</a>
+                          <span class="category-price">50T</span>
+                        </li>
+                      </ul>
+                      <div class="price-area dev-menu-price-con">
+                        <ul>
+                          <li>
+                            Subtotal
+                            <span class="price"
+                              >£<em class="dev-menu-subtotal">450T</em></span
+                            >
+                          </li>
+                          <li class="restaurant-fee-con">
+                            <span class="fee-title">Pick-Up</span>
+                            <span class="price"
+                              >£<em class="dev-menu-charges">x</em></span
+                            >
+                          </li>
+                          <li>
+                            مالیات (13%)
+                            <span class="price"
+                              >T<em class="dev-menu-vtax">Y</em></span
+                            >
+                          </li>
+                        </ul>
+                        <p class="total-price">
+                          Total
+                          <span class="price"
+                            ><em class="dev-menu-grtotal">Y+x+450</em>T</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                    <div id="dev-no-menu-orders-list">
+                      <span class="success-message"
+                        >سبد شما خالی است</span
+                      >
+                    </div>
+                    <div class="pay-option dev-order-pay-options">
+                      <ul>
+                        <li>
+                          <input
+                            id="order-cash-payment"
+                            type="radio"
+                            name="order_payment_method"
+                          />
+                          <label for="order-cash-payment"
+                            ><i class="icon-coins"></i>نقد</label
+                          >
+                        </li>
+                        <li>
+                          <input
+                            id="order-card-payment"
+                            type="radio"
+                            checked="checked"
+                            name="order_payment_method"
+                          />
+                          <label for="order-card-payment"
+                            ><i class="icon-credit-card4"></i>پرداخت آنلاین</label
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="form-group">
+                          <div class="input-group date">
+                            <input
+                              type="text"
+                              name="delivery_date"
+                              id="datetimepicker1"
+                              class="form-control"
+                              value="04-04-2020 10:07"
+                              placeholder="Select Date and Time"
+                            />
+                            <span class="input-group-addon">
+                              <span class="icon-event_available"></span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="menu-order-confirm">تایید سفارش</a>
+                    <span class="menu-loader"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Home Pages Elements End  -->
+      </div>
+      <!-- Main Section End -->
+      <!-- Footer Start -->
+      <footer id="footer" class="footer-style-1">
+        <div class="btn-top bgcolor">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <a class="back-to-top" href="javascript:void(0);"
+                  ><i class="icon-keyboard_arrow_up bounce text-color"></i>بازگشت به بالا</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-widget">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="widget widget_text">
+                      <div class="widget-title">
+                        <h5>درباره ما</h5>
+                      </div>
+                      <div class="textwidget">
+                        <p>
+                          خدمات بخش و توضیع مواددغذایی به کاربران
+                        </p>
+                      </div>
+                    </div>
+                    <ul class="social-media">
+                      <li>
+                        <a
+                          class="addthis_button_facebook"
+                          data-original-title="facebook"
+                          ><i class="icon-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="addthis_button_twitter"
+                          data-original-title="twitter"
+                          ><i class="icon-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="addthis_button_google"
+                          data-original-title="google+"
+                          ><i class="icon-google"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="cs-more addthis_button_compact"
+                          ><i class="icon-share"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="widget widget-top-cities">
+                      <div class="widget-title">
+                        <h5>موارد پر طرفدار</h5>
+                      </div>
+                      <ul>
+                        <li><a href="#">کباب</a></li>
+                        <li><a href="#">پیتزا</a></li>
+                        <li><a href="#">پیتزا</a></li>
+                        <li><a href="#">کیک و دسر</a></li>
+                        <li><a href="#">نوشیدنی سرد</a></li>
+                        <li><a href="#">ساندویچ و برگر</a></li>
+                        <li><a href="#">پیش غذا</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="widget widget-related-post">
+                      <div class="widget widget-recent-blog-post">
+                        <div class="widget-title">
+                          <h5>مقالات و بررسی های معروف</h5>
+                        </div>
+                        <ul>
+                          <li>
+                            <div class="img-holder">
+                              <figure>
+                                <a href="#">
+                                  <img
+                                    src="assets/extra-images/blogs-food-bakery-02-1-150x150.jpg"
+                                    class="attachment-thumbnail size-thumbnail wp-post-image"
+                                    alt=""
+                                    srcset="
+                                      assets/extra-images/blogs-food-bakery-02-1-150x150.jpg 150w,
+                                      assets/extra-images/blogs-food-bakery-02-1-300x300.jpg 300w,
+                                      assets/extra-images/blogs-food-bakery-02-1-200x200.jpg 200w,
+                                      assets/extra-images/blogs-food-bakery-02-1-100x100.jpg 100w
+                                    "
+                                    sizes="(max-width: 150px) 100vw, 150px"
+                                  />
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="text-holder">
+                              <div class="post-title">
+                                <h6>
+                                  <a href="#"
+                                    >...</a
+                                  >
+                                </h6>
+                              </div>
+                              <div class="post-options">
+                                <span
+                                  ><i class="icon-clock4"></i> October 28,
+                                  2023</span
+                                >
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="img-holder">
+                              <figure>
+                                <a href="#">
+                                  <img
+                                    src="assets/extra-images/blog-image-2-150x150.jpg"
+                                    class="attachment-thumbnail size-thumbnail wp-post-image"
+                                    alt=""
+                                    srcset="
+                                      assets/extra-images/blog-image-2-150x150.jpg 150w,
+                                      assets/extra-images/blog-image-2-250x250.jpg 250w,
+                                      assets/extra-images/blog-image-2-200x200.jpg 200w,
+                                      assets/extra-images/blog-image-2-100x100.jpg 100w
+                                    "
+                                    sizes="(max-width: 150px) 100vw, 150px"
+                                  />
+                                </a>
+                              </figure>
+                            </div>
+                            <div class="text-holder">
+                              <div class="post-title">
+                                <h6>
+                                  <a href="#"
+                                    >World’s greatest ...</a
+                                  >
+                                </h6>
+                              </div>
+                              <div class="post-options">
+                                <span
+                                  ><i class="icon-clock4"></i> October 28,
+                                  2023</span
+                                >
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright-sec">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="copyright-inner">
+                  <div class="copy-right">
+                    <p>
+                      © 2024 ساخت و خدمات
+                      <a href="">M-foods</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </footer>
+      <!-- Footer End -->
+    </div>
+    <!-- Modal Popup Start -->
+    <div class="modal fade" id="sign-in" aria-labelledby="myModalLabel">
+      <div class="modal-dialog">
+        <div class="login-form">
+          <div class="modal-content">
+            <div class="tab-content">
+              <div id="user-login-tab" class="tab-pane fade in active">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                  <h5 class="modal-title foodbakery-dev-login-main-title">
+                    ورود به اکانت
+                  </h5>
+                </div>
+                <div class="modal-body">
+                  <p class="foodbakery-dev-login-top-msg"></p>
+                  <div class="cs-login-pbox">
+                    <div class="status status-message"></div>
+                    <form
+                      method="post"
+                      class="wp-user-form webkit"
+                      id="ControlForm_43687"
+                    >
+                      <div class="cs-demo-login">
+                        <div class="cs-demo-login-lable text-color">
+                          برای ورود انتحاب کنید
+                        </div>
+                        <div class="clearfix"></div>
+                        <ul class="login-switches">
+                          <li>
+                            <a
+                              href="register-restaurant.html"
+                              class="btn-red demo-publisher-user"
+                              ><i class="icon-food"></i> رستوران</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="registration.html"
+                              class="btn-red btn-green demo-buyer-user"
+                              ><i class="icon-user4"></i> خریدار</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="input-filed">
+                        <i class="icon-user4"></i>
+                        <input type="text" placeholder="Username" />
+                      </div>
+                      <div class="input-filed">
+                        <i class="icon-unlock-alt"></i>
+                        <input type="password" value="Password" />
+                      </div>
+                      <div class="forget-password">
+                        <a
+                          data-toggle="tab"
+                          href="#user-password"
+                          class="cs-forgot-switch forgot-switch"
+                          >رمزرخود را فراموش کرده ام</a
+                        >
+                      </div>
+                      <div class="input-filed input-field-btn">
+                        <div class="ajax-login-button input-button-loader">
+                          <input
+                            type="button"
+                            class="cs-bgcolor"
+                            value="ورود"
+                          />
+                        </div>
+                      </div>
+                    </form>
+                    <div class="signin-tab-link forget-password">
+                      برای   
+                     <a
+                        data-toggle="tab"
+                        href="#user-register"
+                        class="foodbakery-dev-login-box-btn forgot-switch"
+                        >عضویت</a
+                      >
+                      <a>کلیک کنید</a>
+                    </div>
+                    <div
+                      class="footer-element comment-form-social-connect social_login_ui"
+                    >
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="user-register" class="tab-pane fade">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">×</span>
+                  </button>
+                  <h5 id="myModalLabel" class="modal-title">ثبت و ورود</h5>
+                </div>
+                <div class="modal-body">
+                  <div role="tabpanel" class="tab-pane active">
+                    <div id="result_296069" class="status-message"></div>
+                    <form method="post" class="wp-user-form demo_test">
+                      <div class="input-filed foodbakery-company-name">
+                        <i class="icon-v-card"></i>
+                        <input type="text" placeholder="نام " />
+                      </div>
+                      <div class="input-filed">
+                        <i class="icon-user4"></i>
+                        <input type="text" placeholder="نام مصرف کننده />
+                      </div>
+                      <div class="input-filed">
+                        <i class="icon-v-card"></i>
+                        <input type="text" placeholder="نام کاربری" />
+                      </div>
+                      <div class="input-filed">
+                        <i class="icon-email"></i>
+                        <input type="email" placeholder="Email" />
+                      </div>
+                      <span class="signup-alert">
+                        <b>Note :</b> ایمیل خود را کامل و درست وارد کنید تا برایتان کد عضویت ارسال شود
+                      </span>
+                      <div class="checkbox-area">
+                        <input
+                          type="checkbox"
+                          id="terms-head"
+                          class="foodbakery-dev-req-field"
+                        />
+                        <label for="terms-head">
+                         تایید مقررات سایت
+                          
+                        </label>
+                      </div>
+                      <div class="side-by-side select-icon clearfix">
+                        <div class="select-holder"></div>
+                      </div>
+                      <div class="checks-holder">
+                        <div class="input-filed input-field-btn">
+                          <div class="ajax-signup-button input-button-loader">
+                            <input type="button" value="عضویت" />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="register_content"></div>
+                    <div class="create- signin-tab-link">
+                      <a style="color: #000000;">کنید</a>
+                      <a
+                        data-toggle="tab"
+                        href="#user-login-tab"
+                        class="foodbakery-dev-signup-box-btn"
+                        >کلیک</a>
+                      
+                      اگر از قبل اکانت دارید
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div id="user-password" class="tab-pane fade">
+                <div
+                  class="content-style-form cs-forgot-pbox content-style-form-2"
+                >
+                  <div>
+                    <form class="user_form" method="post">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">×</span>
+                        </button>
+                        <h5 class="modal-title foodbakery-dev-login-main-title">
+                          ساخت اکانت رستوران خود
+                        </h5>
+                      </div>
+                      <div class="modal-body modal-body-loader">
+                        <span class="alert-info"
+                          >ایمیل خود را کامل و درست وارد کنید تا برایتان کد عضویت ارسال شود</span
+                        >
+                        <div class="input-filed">
+                          <i class="icon-email"></i>
+                          <input
+                            type="text"
+                            placeholder="Enter email address..."
+                            name="user_input"
+                          />
+                        </div>
+                        <div class="input-filed input-field-btn">
+                          <div class="ajax-forgot-button input-button-loader">
+                            <input
+                              type="submit"
+                              class="reset_password cs-bgcolor"
+                              name="submit"
+                              value="Submit"
+                            />
+                          </div>
+                        </div>
+                        <div class="forget-password">
+                          <a
+                            data-toggle="tab"
+                            href="#user-login-tab"
+                            class="cs-login-switch forgot-switch triggered-click"
+                            >عضویت</a
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade menu-extras-modal"
+      id="extras-0-1"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+            <h2><a>موارد بیشتر</a></h2>
+          </div>
+          <div class="modal-body">
+            <div class="menu-selection-container">
+              <div class="extras-detail-main">
+                <h3>نوشیدنی ها</h3>
+                <div class="extras-detail-options" style="display: block">
+                  <div class="extras-detail-att">
+                    <label for="extra-0-0-1">
+                      <input
+                        type="radio"
+                        id="extra-0-0-1"
+                        data-ind="0"
+                        data-menucat-id="0"
+                        data-menu-id="1"
+                        name="extra-0-1"
+                      />
+                      <span class="extra-title">نوشابه قوطی</span>
+                      <span class="extra-price">20T</span>
+                    </label>
+                  </div>
+                  <div class="extras-detail-att">
+                    <label for="extra-1-0-1">
+                      <input
+                        type="radio"
+                        id="extra-1-0-1"
+                        data-ind="1"
+                        data-menucat-id="0"
+                        data-menu-id="1"
+                        name="extra-0-1"
+                      />
+                      <span class="extra-title">سس یکبار مصرف</span>
+                      <span class="extra-price">2T</span>
+                    </label>
+                  </div>
+                  <div class="extras-detail-att">
+                    <label for="extra-2-0-1">
+                      <input
+                        type="radio"
+                        id="extra-2-0-1"
+                        data-ind="2"
+                        data-menucat-id="0"
+                        data-menu-id="1"
+                        name="extra-0-1"
+                      />
+                      <span class="extra-title">دلستر قوطی</span>
+                      <span class="extra-price">20T</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="extras-detail-selected"></div>
+              </div>
+              <div class="extras-btns-holder">
+                <button
+                  data-menucat-id="0"
+                  data-menu-id="1"
+                  data-rid="6272"
+                  class="add-extra-menu-btn input-button-loader editing-menu"
+                  data-rand="21274501"
+                >
+                  بررسی تغییرات
+                </button>
+                <a href="#" class="reset-menu-fields btn">اعمال تغییرات</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Popup End -->
+    <script src="assets/js/responsive.menu.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/chosen.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/fliters.js"></script>
+    <script src="assets/js/jquery.fitvids.js"></script>
+    <script src="assets/js/jquery.growl.js"></script>
+    <script src="assets/js/jquery.matchHeight-min.js"></script>
+    <script src="assets/js/masonry.pkgd.js"></script>
+    <script src="assets/js/skills-progress.js"></script>
+    <script src="assets/js/bootstrap-slider.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/theia-sticky-sidebar.js"></script>
+    <script src="assets/js/functions-plugin.js"></script>
+    <script src="assets/js/functions.js"></script>
+  </body>
+</html>
