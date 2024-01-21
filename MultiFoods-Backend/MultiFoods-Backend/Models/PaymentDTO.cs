@@ -2,8 +2,8 @@
 {
     public class PaymentDTO
     {
-        public int PaymentID { get; set; }
-        public int OrderID { get; set; }
+        public int Payment_ID { get; set; }
+        public int Order_ID { get; set; }
         public DateTime PaymentDate { get; set; }
         public decimal Amount { get; set; }
         public string PaymentMethod { get; set; }

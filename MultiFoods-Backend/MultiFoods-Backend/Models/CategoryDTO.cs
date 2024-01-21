@@ -2,7 +2,7 @@
 {
     public class CategoryDTO
     {
-        public int CategoryID { get; set; }
-        public string CategoryName { get; set; }
+        public int Category_ID { get; set; }
+        public string Category_Name { get; set; }
     }
 }
