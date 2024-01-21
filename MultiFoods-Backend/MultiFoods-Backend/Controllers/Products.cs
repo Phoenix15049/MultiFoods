@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Dapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using MultiFoods_Backend.Models;
@@ -14,22 +15,24 @@ namespace MultiFoods_Backend.Controllers
     public class Products : ControllerBase
     {
 
+
         private readonly string connectionString = "Port=1382;Host=localhost;Database=MultiFoodsBeta;Username=postgres;Persist Security Info=True;Password=09331318893";
 
         public DBQueryManager dbqm = new DBQueryManager();
 
         //GET+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        [HttpGet]
-        public async Task<IEnumerable<string>> GetProducts()
+        [HttpGet("GetProd/{id}")]
+        public async Task<ActionResult<List<ProductsDTO>>> GetProducts(int id)
         {
-            
-            Task<IEnumerable<string>> result = dbqm.GetAll("SELECT product_price FROM products",0);
-            return await result;
 
-
-
-
-
+            using (var connection = new NpgsqlConnection(connectionString))
+            {
+                // Create a query that retrieves all authors" 
+                var sql = $"SELECT * FROM Products WHERE product_id = {id};";
+                // Use the Query method to execute the query and return a list of objects
+                List<ProductsDTO> products = connection.Query<ProductsDTO>(sql).ToList();
+                return Ok(products);
+            }
 
         }
 
