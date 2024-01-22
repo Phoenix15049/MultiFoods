@@ -6,6 +6,6 @@
         public string Restaurant_Name { get; set; }
         public string Address { get; set; }
         public int Manager_ID { get; set; }
-        public RestaurantManagerDTO Manager { get; set; }
+        
     }
 }

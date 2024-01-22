@@ -8,7 +8,5 @@
         public decimal Price { get; set; }
         public int Category_ID { get; set; }
         public int Menu_ID { get; set; }
-        //public CategoryDTO Category { get; set; }
-        //public MenuDTO Menu { get; set; }
     }
 }

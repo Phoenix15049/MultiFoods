@@ -100,10 +100,10 @@ public class CustomerController : ControllerBase
     [HttpPost("Register")]
     public IActionResult Register([FromBody] CustomerDTO customer)
     {
-        CustomerDTO dbUser = _customerRepository.GetAllCustomers().Where(x => x.Phone == customer.Phone || x.Email == customer.Email|| x.Customer_ID == customer.Customer_ID).FirstOrDefault();
+        CustomerDTO dbUser = _customerRepository.GetAllCustomers().FirstOrDefault(x => x.Phone == customer.Phone || x.Email == customer.Email|| x.Customer_ID == customer.Customer_ID);
         if(dbUser != null)
         {
-            return BadRequest("alridm");
+            return BadRequest("naridm");
         }
         _customerRepository.CreateCustomer(customer);
         return CreatedAtAction(nameof(GetCustomer), new { id = customer.Customer_ID }, customer);

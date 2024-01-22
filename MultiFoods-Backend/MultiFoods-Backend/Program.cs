@@ -45,10 +45,12 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<AppDbContext>();
 builder.Services.AddScoped<CustomerRepository>();
 builder.Services.AddScoped<CategoryRepository>();
-builder.Services.AddScoped<RestaurantManagerRepository>();
 builder.Services.AddScoped<RestaurantRepository>();
+builder.Services.AddScoped<OrderRepository>();
+builder.Services.AddScoped<OrderRepository>();
+builder.Services.AddScoped<MenuItemRepository>();
 
-builder.Services.AddScoped<OrderRepository>(_ => new OrderRepository(configuration.GetConnectionString("DefaultConnection")));
+
 
 
 
