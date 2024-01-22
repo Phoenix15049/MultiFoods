@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Items API Example</h1>
+
+    <div id="items-container">
+        <button onclick="getAllItems()">Get All Items</button>
+
+        <div id="item-details">
+            <h2>Item Details</h2>
+            <label for="itemId">Item ID:</label>
+            <input type="number" id="itemId" placeholder="Enter Item ID">
+            <button onclick="getItemById()">Get Item by ID</button>
+            <div id="item-result"></div>
+        </div>
+
+        <div id="create-item">
+            <h2>Create Item</h2>
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" placeholder="Enter Item Name">
+            <label for="itemPrice">Price:</label>
+            <input type="number" id="itemPrice" placeholder="Enter Price">
+            <label for="itemCategory">Category ID:</label>
+            <input type="number" id="itemCategory" placeholder="Enter Category ID">
+            <button onclick="createItem()">Create Item</button>
+            <div id="create-result"></div>
+        </div>
+
+        <div id="update-item">
+            <h2>Update Item</h2>
+            <label for="updateItemId">Item ID:</label>
+            <input type="number" id="updateItemId" placeholder="Enter Item ID">
+            <label for="updateItemName">Item Name:</label>
+            <input type="text" id="updateItemName" placeholder="Enter Item Name">
+            <label for="updateItemPrice">Price:</label>
+            <input type="number" id="updateItemPrice" placeholder="Enter Price">
+            <label for="updateItemCategory">Category ID:</label>
+            <input type="number" id="updateItemCategory" placeholder="Enter Category ID">
+            <button onclick="updateItem()">Update Item</button>
+            <div id="update-result"></div>
+        </div>
+
+        <div id="delete-item">
+            <h2>Delete Item</h2>
+            <label for="deleteItemId">Item ID:</label>
+            <input type="number" id="deleteItemId" placeholder="Enter Item ID">
+            <button onclick="deleteItem()">Delete Item</button>
+            <div id="delete-result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
