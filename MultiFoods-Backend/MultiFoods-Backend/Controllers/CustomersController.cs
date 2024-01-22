@@ -63,7 +63,7 @@ public class CustomerController : ControllerBase
     public IActionResult DeleteCustomer(int id)
     {
         var existingCustomer = _customerRepository.GetCustomerById(id);
-
+        
         if (existingCustomer == null)
             return NotFound();
 
@@ -86,6 +86,7 @@ public class CustomerController : ControllerBase
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(ClaimTypes.Email, dbUser.Email.ToString()),
             new Claim(ClaimTypes.StreetAddress, dbUser.Address.ToString()),
+
         };
         var token = GetToken(authClaims);
 
@@ -100,13 +101,14 @@ public class CustomerController : ControllerBase
     [HttpPost("Register")]
     public IActionResult Register([FromBody] CustomerDTO customer)
     {
-        CustomerDTO dbUser = _customerRepository.GetAllCustomers().FirstOrDefault(x => x.Phone == customer.Phone || x.Email == customer.Email|| x.Customer_ID == customer.Customer_ID);
+        CustomerDTO dbUser = _customerRepository.GetAllCustomers().Where(x => x.Phone == customer.Phone || x.Email == customer.Email).FirstOrDefault();
         if(dbUser != null)
         {
             return BadRequest("naridm");
         }
+        customer.Customer_ID = 1;
         _customerRepository.CreateCustomer(customer);
-        return CreatedAtAction(nameof(GetCustomer), new { id = customer.Customer_ID }, customer);
+        return Ok(CreatedAtAction(nameof(GetCustomer), new { id = customer.Customer_ID }, customer));
     }
 
     private JwtSecurityToken GetToken(List<Claim> authClaim)

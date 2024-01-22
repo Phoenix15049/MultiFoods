@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.Text;
 using System.Xml.Schema;
 using Microsoft.Extensions.Configuration;
+using MultiFoods_Backend.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,11 +45,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<AppDbContext>();
 builder.Services.AddScoped<CustomerRepository>();
-builder.Services.AddScoped<CategoryRepository>();
+builder.Services.AddScoped<ItemsRepository>();
+builder.Services.AddScoped<MenuRepository>();
 builder.Services.AddScoped<RestaurantRepository>();
-builder.Services.AddScoped<OrderRepository>();
-builder.Services.AddScoped<OrderRepository>();
-builder.Services.AddScoped<MenuItemRepository>();
+builder.Services.AddScoped<CategoryRepository>();
+
 
 
 

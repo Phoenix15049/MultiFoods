@@ -28,7 +28,7 @@ public class CustomerRepository
     public void CreateCustomer(CustomerDTO customer)
     {
         using var dbConnection = _dbContext.GetConnection();
-        const string query = "INSERT INTO Customers (Customer_ID ,First_Name, Last_Name, Email, Phone, Password, Address) VALUES (@Customer_ID,@First_Name, @Last_Name, @Email, @Phone, @Password, @Address)";
+        const string query = "INSERT INTO Customers (First_Name, Last_Name, Email, Phone, Password, Address) VALUES (@First_Name, @Last_Name, @Email, @Phone, @Password, @Address)";
         dbConnection.Execute(query, customer);
     }
 
