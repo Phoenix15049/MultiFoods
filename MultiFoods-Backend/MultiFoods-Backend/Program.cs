@@ -50,7 +50,15 @@ builder.Services.AddScoped<MenuRepository>();
 builder.Services.AddScoped<RestaurantRepository>();
 builder.Services.AddScoped<OrdersRepository>();
 builder.Services.AddScoped<CategoryRepository>();
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
 
 
 
@@ -70,7 +78,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 
 app.UseAuthorization();
-
+app.UseCors("AllowAll");
 app.MapControllers();
 
 app.Run();

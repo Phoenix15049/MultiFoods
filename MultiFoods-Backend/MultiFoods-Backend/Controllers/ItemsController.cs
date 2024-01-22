@@ -42,12 +42,18 @@ namespace MultiFoods_Backend.Controllers
             return Ok(item);
         }
 
+
         [HttpPost]
-        public async Task<ActionResult<int>> CreateItem(ItemsDto item)
+        public async Task<ActionResult<object>> CreateItem(ItemsDto item)
         {
             var itemId = await _itemsRepository.CreateItemAsync(item);
-            return Ok(itemId);
+            return new { ItemId = itemId };
         }
+        //public async Task<ActionResult<int>> CreateItem(ItemsDto item)
+        //{
+        //    var itemId = await _itemsRepository.CreateItemAsync(item);
+        //    return Ok(itemId);
+        //}
 
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateItem(int id, ItemsDto item)
