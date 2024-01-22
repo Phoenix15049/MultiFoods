@@ -14,14 +14,14 @@ namespace MultiFoods_Backend.Controllers
     {
         private readonly string connectionString = "Port=1382;Host=localhost;Database=MultiFoodsBeta;Username=postgres;Persist Security Info=True;Password=09331318893";
         [HttpGet]
-        public async Task<ActionResult<List<MenuItemDTO>>> GetProducts(int id)
+        public async Task<ActionResult<List<MenuItemRepository>>> GetProducts(int id)
         {
             using (var connection = new NpgsqlConnection(connectionString))
             {
                 // Create a query that retrieves all authors" 
                 var sql = $"SELECT * FROM Products";
                 // Use the Query method to execute the query and return a list of objects
-                List<MenuItemDTO> items = connection.Query<MenuItemDTO>(sql).ToList();
+                List<MenuItemRepository> items = connection.Query<MenuItemRepository>(sql).ToList();
                 return Ok(items);
             }
         }

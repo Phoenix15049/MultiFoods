@@ -1,9 +1,13 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using MultiFoods_Backend.Models;
 using MultiFoods_Backend.Services;
+using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 using System.Xml.Schema;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,9 +44,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<AppDbContext>();
 builder.Services.AddScoped<CustomerRepository>();
+builder.Services.AddScoped<CategoryRepository>();
+builder.Services.AddScoped<RestaurantManagerRepository>();
+builder.Services.AddScoped<RestaurantRepository>();
 
-
-
+builder.Services.AddScoped<OrderRepository>(_ => new OrderRepository(configuration.GetConnectionString("DefaultConnection")));
 
 
 
