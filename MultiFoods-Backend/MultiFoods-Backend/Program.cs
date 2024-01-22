@@ -48,6 +48,7 @@ builder.Services.AddScoped<CustomerRepository>();
 builder.Services.AddScoped<ItemsRepository>();
 builder.Services.AddScoped<MenuRepository>();
 builder.Services.AddScoped<RestaurantRepository>();
+builder.Services.AddScoped<OrdersRepository>();
 builder.Services.AddScoped<CategoryRepository>();
 
 

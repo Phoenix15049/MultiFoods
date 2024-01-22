@@ -59,4 +59,11 @@
         public string Review_Text { get; set; }
         public int Rating { get; set; }
     }
+    public class CreateOrderInputModel
+    {
+        public OrdersDto Order { get; set; }
+        public List<OrderDetailsDto> OrderDetails { get; set; }
+    }
+
+
 }
